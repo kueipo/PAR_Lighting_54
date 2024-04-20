@@ -1,0 +1,1554 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Output\Project.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Output\Project.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Apr 20 12:55:54 2024
+<BR><P>
+<H3>Maximum Stack Usage =        124 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; $Super$$main &rArr; APP_SystemClockConfig &rArr; HAL_RCC_OscConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[b]">ADC_COMP_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[b]">ADC_COMP_IRQHandler</a><BR>
+ <LI><a href="#[25]">Error_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[25]">Error_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[b]">ADC_COMP_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[8]">EXTI0_1_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[9]">EXTI2_3_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[a]">EXTI4_15_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[6]">FLASH_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from py32f0xx_it.o(i.HardFault_Handler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[10]">I2C1_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[e]">LPTIM1_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from py32f0xx_it.o(i.NMI_Handler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from py32f0xx_it.o(i.PendSV_Handler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[7]">RCC_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[11]">SPI1_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from py32f0xx_it.o(i.SVC_Handler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from py32f0xx_it.o(i.SysTick_Handler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[14]">SystemInit</a> from system_py32f0xx.o(i.SystemInit) referenced from startup_py32f002xx.o(.text)
+ <LI><a href="#[f]">TIM16_IRQHandler</a> from py32f0xx_it.o(i.TIM16_IRQHandler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[c]">TIM1_BRK_UP_TRG_COM_IRQHandler</a> from py32f0xx_it.o(i.TIM1_BRK_UP_TRG_COM_IRQHandler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[d]">TIM1_CC_IRQHandler</a> from startup_py32f002xx.o(.text) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[12]">USART1_IRQHandler</a> from py32f0xx_it.o(i.USART1_IRQHandler) referenced from startup_py32f002xx.o(RESET)
+ <LI><a href="#[15]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_py32f002xx.o(.text)
+ <LI><a href="#[13]">main</a> from system_py32f0xx.o(i.$Sub$$main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[15]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(.text)
+</UL>
+<P><STRONG><a name="[c2]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[16]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[21]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c3]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[c4]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[c5]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[18]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<BR><BR>[Calls]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_fini_ (Weak Reference)
+</UL>
+
+<P><STRONG><a name="[c6]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[c7]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>ADC_COMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_COMP_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_COMP_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>EXTI0_1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>EXTI2_3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>EXTI4_15_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>LPTIM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_py32f002xx.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[c8]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[55]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDimmerProc
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedGlitterMode
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[c9]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[5c]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+</UL>
+
+<P><STRONG><a name="[ca]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[1b]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[cb]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[cc]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[1a]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CleanAllDisplay
+</UL>
+
+<P><STRONG><a name="[2e]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_SystemClockConfig
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[cd]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[1c]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[aa]"></a>__aeabi_fmul</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, fmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanTimer
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanMode
+</UL>
+
+<P><STRONG><a name="[1d]"></a>__aeabi_fdiv</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, fdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fdiv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanMode
+</UL>
+
+<P><STRONG><a name="[1f]"></a>__aeabi_ui2f</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, ffltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanTimer
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanMode
+</UL>
+
+<P><STRONG><a name="[ab]"></a>__aeabi_f2uiz</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ffixui.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanTimer
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanMode
+</UL>
+
+<P><STRONG><a name="[ce]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[1e]"></a>_float_round</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, fepilogue.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+</UL>
+
+<P><STRONG><a name="[20]"></a>_float_epilogue</STRONG> (Thumb, 114 bytes, Stack size 12 bytes, fepilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = _float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+</UL>
+
+<P><STRONG><a name="[17]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[cf]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[13]"></a>main</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, system_py32f0xx.o(i.$Sub$$main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = main &rArr; $Super$$main &rArr; APP_SystemClockConfig &rArr; HAL_RCC_OscConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[28]"></a>APP_GPIOConfig</STRONG> (Thumb, 326 bytes, Stack size 16 bytes, bspdriver_gpio.o(i.APP_GPIOConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = APP_GPIOConfig &rArr; LL_GPIO_SetPinSpeed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinSpeed
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinPull
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[2d]"></a>APP_SystemClockConfig</STRONG> (Thumb, 98 bytes, Stack size 56 bytes, bspdriver_sysclk.o(i.APP_SystemClockConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = APP_SystemClockConfig &rArr; HAL_RCC_OscConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[31]"></a>APP_TIM16Config</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, bspdriver_timer16.o(i.APP_TIM16Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = APP_TIM16Config &rArr; HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[3c]"></a>APP_TIM1_PWM_Config</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.APP_TIM1_PWM_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = APP_TIM1_PWM_Config &rArr; APP_TIM1_GPIO &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_INIT
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_GPIO
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[3d]"></a>APP_USART1Config</STRONG> (Thumb, 146 bytes, Stack size 48 bytes, bspdriver_usart.o(i.APP_USART1Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = APP_USART1Config &rArr; HAL_UART_Init &rArr; UART_SetConfig &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_DeInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[ac]"></a>DMX512ModeSelect</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, ledfunc.o(i.DMX512ModeSelect))
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+</UL>
+
+<P><STRONG><a name="[25]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, bspdriver_sysclk.o(i.Error_Handler))
+<BR><BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_USART1Config
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM16Config
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_SystemClockConfig
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_INIT
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_FlashErase
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan4
+</UL>
+
+<P><STRONG><a name="[49]"></a>FLASH_WaitForLastOperation</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, py32f0xx_hal_flash.o(i.FLASH_WaitForLastOperation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Erase
+</UL>
+
+<P><STRONG><a name="[4d]"></a>HAL_Delay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, py32f0xx_hal.o(i.HAL_Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_Delay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[24]"></a>HAL_FLASH_Erase</STRONG> (Thumb, 404 bytes, Stack size 24 bytes, py32f0xx_hal_flash.o(i.HAL_FLASH_Erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_SectorErase
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_PageErase
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_MassErase
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_FlashErase
+</UL>
+
+<P><STRONG><a name="[c1]"></a>HAL_FLASH_Lock</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, py32f0xx_hal_flash.o(i.HAL_FLASH_Lock))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+</UL>
+
+<P><STRONG><a name="[27]"></a>HAL_FLASH_Program</STRONG> (Thumb, 246 bytes, Stack size 32 bytes, py32f0xx_hal_flash.o(i.HAL_FLASH_Program))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Program_Page
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_FlashProgram
+</UL>
+
+<P><STRONG><a name="[c0]"></a>HAL_FLASH_Unlock</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, py32f0xx_hal_flash.o(i.HAL_FLASH_Unlock))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+</UL>
+
+<P><STRONG><a name="[35]"></a>HAL_GPIO_Init</STRONG> (Thumb, 268 bytes, Stack size 20 bytes, py32f0xx_hal_gpio.o(i.HAL_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_USART1Config
+<LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_GPIO
+</UL>
+
+<P><STRONG><a name="[4a]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, py32f0xx_hal.o(i.HAL_GetTick))
+<BR><BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+</UL>
+
+<P><STRONG><a name="[b6]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, py32f0xx_hal.o(i.HAL_IncTick))
+<BR><BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[52]"></a>HAL_Init</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, py32f0xx_hal.o(i.HAL_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_Init &rArr; HAL_InitTick &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[53]"></a>HAL_InitTick</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, py32f0xx_hal.o(i.HAL_InitTick))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = HAL_InitTick &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+</UL>
+
+<P><STRONG><a name="[54]"></a>HAL_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_msp.o(i.HAL_MspInit))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+</UL>
+
+<P><STRONG><a name="[5f]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, py32f0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+</UL>
+
+<P><STRONG><a name="[57]"></a>HAL_NVIC_SetPriority</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, py32f0xx_hal_cortex.o(i.HAL_NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+</UL>
+
+<P><STRONG><a name="[30]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 320 bytes, Stack size 24 bytes, py32f0xx_hal_rcc.o(i.HAL_RCC_ClockConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = HAL_RCC_ClockConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_SystemClockConfig
+</UL>
+
+<P><STRONG><a name="[5b]"></a>HAL_RCC_GetHCLKFreq</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, py32f0xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+</UL>
+
+<P><STRONG><a name="[5a]"></a>HAL_RCC_GetPCLK1Freq</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, py32f0xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = HAL_RCC_GetPCLK1Freq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetHCLKFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+</UL>
+
+<P><STRONG><a name="[59]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, py32f0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+</UL>
+
+<P><STRONG><a name="[2f]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 550 bytes, Stack size 24 bytes, py32f0xx_hal_rcc.o(i.HAL_RCC_OscConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = HAL_RCC_OscConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_SystemClockConfig
+</UL>
+
+<P><STRONG><a name="[56]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, py32f0xx_hal_cortex.o(i.HAL_SYSTICK_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_SYSTICK_Config
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+</UL>
+
+<P><STRONG><a name="[65]"></a>HAL_TIMEx_BreakCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim_ex.o(i.HAL_TIMEx_BreakCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[67]"></a>HAL_TIMEx_CommutCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim_ex.o(i.HAL_TIMEx_CommutCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[32]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_Base_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM16Config
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_INIT
+</UL>
+
+<P><STRONG><a name="[5d]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, py32f0xx_hal_msp.o(i.HAL_TIM_Base_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+
+<P><STRONG><a name="[33]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM16Config
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+</UL>
+
+<P><STRONG><a name="[61]"></a>HAL_TIM_IC_CaptureCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[60]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 362 bytes, Stack size 16 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_OC_DelayElapsedCallback
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IC_CaptureCallback
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_CommutCallback
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_BreakCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM16_IRQHandler
+</UL>
+
+<P><STRONG><a name="[62]"></a>HAL_TIM_OC_DelayElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[68]"></a>HAL_TIM_PWM_ConfigChannel</STRONG> (Thumb, 214 bytes, Stack size 24 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4_SetConfig
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC3_SetConfig
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC1_SetConfig
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan4
+</UL>
+
+<P><STRONG><a name="[63]"></a>HAL_TIM_PWM_PulseFinishedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[6d]"></a>HAL_TIM_PWM_Start</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_PWM_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_PWM_Start &rArr; TIM_CCxChannelCmd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_CCxChannelCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan4
+</UL>
+
+<P><STRONG><a name="[64]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_PeriodElapsedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[66]"></a>HAL_TIM_TriggerCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_tim.o(i.HAL_TIM_TriggerCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[3e]"></a>HAL_UART_DeInit</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, py32f0xx_hal_uart.o(i.HAL_UART_DeInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_UART_DeInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspDeInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_USART1Config
+</UL>
+
+<P><STRONG><a name="[73]"></a>HAL_UART_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.HAL_UART_ErrorCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[70]"></a>HAL_UART_IRQHandler</STRONG> (Thumb, 222 bytes, Stack size 24 bytes, py32f0xx_hal_uart.o(i.HAL_UART_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_UART_IRQHandler &rArr; UART_Receive_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IdleFrameDetectCpltCallback
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Transmit_IT
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndTransmit_IT
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[74]"></a>HAL_UART_IdleFrameDetectCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.HAL_UART_IdleFrameDetectCpltCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[3f]"></a>HAL_UART_Init</STRONG> (Thumb, 110 bytes, Stack size 24 bytes, py32f0xx_hal_uart.o(i.HAL_UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = HAL_UART_Init &rArr; UART_SetConfig &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_AdvFeatureConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_USART1Config
+</UL>
+
+<P><STRONG><a name="[6f]"></a>HAL_UART_MspDeInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.HAL_UART_MspDeInit))
+<BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_DeInit
+</UL>
+
+<P><STRONG><a name="[77]"></a>HAL_UART_MspInit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, py32f0xx_hal_msp.o(i.HAL_UART_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[b8]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.HAL_UART_RxCpltCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
+</UL>
+
+<P><STRONG><a name="[b7]"></a>HAL_UART_TxCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.HAL_UART_TxCpltCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndTransmit_IT
+</UL>
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_it.o(i.HardFault_Handler))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[82]"></a>KeyDownFunc</STRONG> (Thumb, 204 bytes, Stack size 12 bytes, keyfunc.o(i.KeyDownFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = KeyDownFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunc
+</UL>
+
+<P><STRONG><a name="[84]"></a>KeyFunc</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, keyfunc.o(i.KeyFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = KeyFunc &rArr; WriteUserSetDataIntoEEPROM &rArr; WriteEEPROM &rArr; APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteUserSetDataIntoEEPROM
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyPlusFunc
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDownFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer5ms
+</UL>
+
+<P><STRONG><a name="[85]"></a>KeyPlusFunc</STRONG> (Thumb, 198 bytes, Stack size 12 bytes, keyfunc.o(i.KeyPlusFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = KeyPlusFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunc
+</UL>
+
+<P><STRONG><a name="[bf]"></a>KeyScan</STRONG> (Thumb, 252 bytes, Stack size 16 bytes, keyfunc.o(i.KeyScan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = KeyScan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer5ms
+</UL>
+
+<P><STRONG><a name="[87]"></a>LED_FunctionMode</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, ledfunc.o(i.LED_FunctionMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LED_FunctionMode &rArr; LedDMX512_8ChanMode &rArr; __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedVoiceControlMode
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedRedLightMode
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorMode
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedGreenLightMode
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedGlitterMode
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanMode
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanMode
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorPulseMode
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorJumpMode
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualMode
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedBlueLightMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[93]"></a>LED_FunctionTimer</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, ledfunc.o(i.LED_FunctionTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = LED_FunctionTimer &rArr; LedDMX512_8ChanTimer &rArr; LedColorGradualFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedVoiceControlTimer
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedRedLightTimer
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorTimer
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedGreenLightTimer
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedGlitterTimer
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_4ChanTimer
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorPulseTimer
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorJumpTimer
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualTimer
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedBlueLightTimer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer5ms
+</UL>
+
+<P><STRONG><a name="[9f]"></a>LED_Scan</STRONG> (Thumb, 636 bytes, Stack size 16 bytes, nixitetube_driver.o(i.LED_Scan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LED_Scan &rArr; SEG_GPIO_CofigFloat &rArr; LL_GPIO_SetPinPull
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG_GPIO_CofigFloat
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG6_GPIO_CofigOutput
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG5_GPIO_CofigOutput
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG4_GPIO_CofigOutput
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG3_GPIO_CofigOutput
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG2_GPIO_CofigOutput
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG1_GPIO_CofigOutput
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_GPIO_IntputPullUp
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY4_GPIO_StateGet
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY3_GPIO_StateGet
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY2_GPIO_StateGet
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY1_GPIO_StateGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer1ms
+</UL>
+
+<P><STRONG><a name="[8c]"></a>LedBlueLightMode</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ledfunc.o(i.LedBlueLightMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[98]"></a>LedBlueLightTimer</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ledfunc.o(i.LedBlueLightTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[a7]"></a>LedColorGradualFunc</STRONG> (Thumb, 170 bytes, Stack size 20 bytes, ledfunc.o(i.LedColorGradualFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = LedColorGradualFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualTimer
+</UL>
+
+<P><STRONG><a name="[90]"></a>LedColorGradualMode</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ledfunc.o(i.LedColorGradualMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[9c]"></a>LedColorGradualTimer</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, ledfunc.o(i.LedColorGradualTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LedColorGradualTimer &rArr; LedColorGradualFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[a8]"></a>LedColorJumpFunc</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, ledfunc.o(i.LedColorJumpFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LedColorJumpFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorJumpTimer
+</UL>
+
+<P><STRONG><a name="[8f]"></a>LedColorJumpMode</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, ledfunc.o(i.LedColorJumpMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[9b]"></a>LedColorJumpTimer</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, ledfunc.o(i.LedColorJumpTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LedColorJumpTimer &rArr; LedColorJumpFunc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorJumpFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[a9]"></a>LedColorPulseFunc</STRONG> (Thumb, 114 bytes, Stack size 20 bytes, ledfunc.o(i.LedColorPulseFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LedColorPulseFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorPulseTimer
+</UL>
+
+<P><STRONG><a name="[91]"></a>LedColorPulseMode</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, ledfunc.o(i.LedColorPulseMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[9d]"></a>LedColorPulseTimer</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, ledfunc.o(i.LedColorPulseTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = LedColorPulseTimer &rArr; LedColorPulseFunc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorPulseFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[88]"></a>LedDMX512_4ChanMode</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, ledfunc.o(i.LedDMX512_4ChanMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = LedDMX512_4ChanMode &rArr; __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[94]"></a>LedDMX512_4ChanTimer</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, ledfunc.o(i.LedDMX512_4ChanTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LedDMX512_4ChanTimer &rArr; __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[89]"></a>LedDMX512_8ChanMode</STRONG> (Thumb, 260 bytes, Stack size 16 bytes, ledfunc.o(i.LedDMX512_8ChanMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = LedDMX512_8ChanMode &rArr; __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMX512ModeSelect
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[95]"></a>LedDMX512_8ChanTimer</STRONG> (Thumb, 346 bytes, Stack size 16 bytes, ledfunc.o(i.LedDMX512_8ChanTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LedDMX512_8ChanTimer &rArr; LedColorGradualFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorFunc
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorPulseFunc
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorJumpFunc
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualFunc
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MIC_Check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[af]"></a>LedDimmerProc</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, led.o(i.LedDimmerProc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = LedDimmerProc &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDriver
+</UL>
+
+<P><STRONG><a name="[b0]"></a>LedDriver</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, led.o(i.LedDriver))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = LedDriver &rArr; LedDimmerProc &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDimmerProc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer5ms
+</UL>
+
+<P><STRONG><a name="[8d]"></a>LedGlitterMode</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, ledfunc.o(i.LedGlitterMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = LedGlitterMode &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[99]"></a>LedGlitterTimer</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, ledfunc.o(i.LedGlitterTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LedGlitterTimer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[8b]"></a>LedGreenLightMode</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ledfunc.o(i.LedGreenLightMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[97]"></a>LedGreenLightTimer</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ledfunc.o(i.LedGreenLightTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[ad]"></a>LedOneColorFunc</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, ledfunc.o(i.LedOneColorFunc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LedOneColorFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorMode
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+</UL>
+
+<P><STRONG><a name="[8e]"></a>LedOneColorMode</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, ledfunc.o(i.LedOneColorMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LedOneColorMode &rArr; LedOneColorFunc &rArr; __ARM_common_switch8
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[9a]"></a>LedOneColorTimer</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ledfunc.o(i.LedOneColorTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[8a]"></a>LedRedLightMode</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ledfunc.o(i.LedRedLightMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[96]"></a>LedRedLightTimer</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ledfunc.o(i.LedRedLightTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[92]"></a>LedVoiceControlMode</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, ledfunc.o(i.LedVoiceControlMode))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+</UL>
+
+<P><STRONG><a name="[9e]"></a>LedVoiceControlTimer</STRONG> (Thumb, 176 bytes, Stack size 12 bytes, ledfunc.o(i.LedVoiceControlTimer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LedVoiceControlTimer
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MIC_Check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[ae]"></a>MIC_Check</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, ledfunc.o(i.MIC_Check))
+<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer1ms
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedVoiceControlTimer
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_it.o(i.NMI_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[b1]"></a>NixieTubeDisplay</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, nixitetube.o(i.NixieTubeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = NixieTubeDisplay &rArr; ColorGradualModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VoiceControlModeDisplay
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RedLightModeDisplay
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OneColorModeDisplay
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GreenLightModeDisplay
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GlitterModeDisplay
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMX512_8ChanModeDisplay
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMX512_4ChanModeDisplay
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorPulseModeDisplay
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorJumpModeDisplay
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorGradualModeDisplay
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CleanAllDisplay
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BlueLightModeDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer100ms
+</UL>
+
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_it.o(i.PendSV_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[ba]"></a>ReadUserSetData</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, eeprom.o(i.ReadUserSetData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ReadUserSetData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserSetInit
+</UL>
+
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, py32f0xx_it.o(i.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, py32f0xx_it.o(i.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>SystemInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, system_py32f0xx.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(.text)
+</UL>
+<P><STRONG><a name="[f]"></a>TIM16_IRQHandler</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, py32f0xx_it.o(i.TIM16_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIM16_IRQHandler &rArr; HAL_TIM_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>TIM1_BRK_UP_TRG_COM_IRQHandler</STRONG> (Thumb, 206 bytes, Stack size 16 bytes, py32f0xx_it.o(i.TIM1_BRK_UP_TRG_COM_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = TIM1_BRK_UP_TRG_COM_IRQHandler &rArr; Tim1PwmDutySetChan3 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[5e]"></a>TIM_Base_SetConfig</STRONG> (Thumb, 76 bytes, Stack size 12 bytes, py32f0xx_hal_tim.o(i.TIM_Base_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_Base_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+
+<P><STRONG><a name="[6e]"></a>TIM_CCxChannelCmd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, py32f0xx_hal_tim.o(i.TIM_CCxChannelCmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_CCxChannelCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+</UL>
+
+<P><STRONG><a name="[6a]"></a>TIM_OC2_SetConfig</STRONG> (Thumb, 110 bytes, Stack size 20 bytes, py32f0xx_hal_tim.o(i.TIM_OC2_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC2_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+
+<P><STRONG><a name="[38]"></a>Tim1PwmDutySetChan1</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.Tim1PwmDutySetChan1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Tim1PwmDutySetChan1 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_UP_TRG_COM_IRQHandler
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+</UL>
+
+<P><STRONG><a name="[39]"></a>Tim1PwmDutySetChan2</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.Tim1PwmDutySetChan2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Tim1PwmDutySetChan2 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_UP_TRG_COM_IRQHandler
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+</UL>
+
+<P><STRONG><a name="[3a]"></a>Tim1PwmDutySetChan3</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.Tim1PwmDutySetChan3))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Tim1PwmDutySetChan3 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_BRK_UP_TRG_COM_IRQHandler
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+</UL>
+
+<P><STRONG><a name="[3b]"></a>Tim1PwmDutySetChan4</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.Tim1PwmDutySetChan4))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Tim1PwmDutySetChan4 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM
+</UL>
+
+<P><STRONG><a name="[12]"></a>USART1_IRQHandler</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, py32f0xx_it.o(i.USART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = USART1_IRQHandler &rArr; HAL_UART_IRQHandler &rArr; UART_Receive_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_py32f002xx.o(RESET)
+</UL>
+<P><STRONG><a name="[b9]"></a>UserSetInit</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, eeprom.o(i.UserSetInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = UserSetInit &rArr; WriteEEPROM &rArr; APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadUserSetData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[bc]"></a>UserTimer100ms</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, timer.o(i.UserTimer100ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = UserTimer100ms &rArr; NixieTubeDisplay &rArr; ColorGradualModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[bd]"></a>UserTimer1ms</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, timer.o(i.UserTimer1ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = UserTimer1ms &rArr; LED_Scan &rArr; SEG_GPIO_CofigFloat &rArr; LL_GPIO_SetPinPull
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MIC_Check
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[be]"></a>UserTimer5ms</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, timer.o(i.UserTimer5ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = UserTimer5ms &rArr; KeyFunc &rArr; WriteUserSetDataIntoEEPROM &rArr; WriteEEPROM &rArr; APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDriver
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+
+<P><STRONG><a name="[bb]"></a>WriteEEPROM</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, eeprom.o(i.WriteEEPROM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = WriteEEPROM &rArr; APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Unlock
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Lock
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_FlashProgram
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_FlashErase
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserSetInit
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteUserSetDataIntoEEPROM
+</UL>
+
+<P><STRONG><a name="[86]"></a>WriteUserSetDataIntoEEPROM</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, eeprom.o(i.WriteUserSetDataIntoEEPROM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = WriteUserSetDataIntoEEPROM &rArr; WriteEEPROM &rArr; APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunc
+</UL>
+
+<P><STRONG><a name="[83]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, py32f0xx_hal_rcc.o(i.__ARM_common_switch8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyPlusFunc
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDownFunc
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOneColorFunc
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDMX512_8ChanTimer
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedColorGradualFunc
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionTimer
+</UL>
+
+<P><STRONG><a name="[d0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[d1]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[d2]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[22]"></a>$Super$$main</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = $Super$$main &rArr; APP_SystemClockConfig &rArr; HAL_RCC_OscConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer5ms
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer1ms
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserTimer100ms
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserSetInit
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_FunctionMode
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_USART1Config
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM_Config
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM16Config
+<LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_SystemClockConfig
+<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_GPIOConfig
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[58]"></a>__NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, py32f0xx_hal_cortex.o(i.__NVIC_SetPriority))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+</UL>
+
+<P><STRONG><a name="[4e]"></a>FLASH_MassErase</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, py32f0xx_hal_flash.o(i.FLASH_MassErase))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Erase
+</UL>
+
+<P><STRONG><a name="[4f]"></a>FLASH_PageErase</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, py32f0xx_hal_flash.o(i.FLASH_PageErase))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Erase
+</UL>
+
+<P><STRONG><a name="[51]"></a>FLASH_Program_Page</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, py32f0xx_hal_flash.o(i.FLASH_Program_Page))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = FLASH_Program_Page
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+</UL>
+
+<P><STRONG><a name="[50]"></a>FLASH_SectorErase</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, py32f0xx_hal_flash.o(i.FLASH_SectorErase))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Erase
+</UL>
+
+<P><STRONG><a name="[69]"></a>TIM_OC1_SetConfig</STRONG> (Thumb, 100 bytes, Stack size 20 bytes, py32f0xx_hal_tim.o(i.TIM_OC1_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC1_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+
+<P><STRONG><a name="[6b]"></a>TIM_OC3_SetConfig</STRONG> (Thumb, 108 bytes, Stack size 20 bytes, py32f0xx_hal_tim.o(i.TIM_OC3_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC3_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+
+<P><STRONG><a name="[6c]"></a>TIM_OC4_SetConfig</STRONG> (Thumb, 84 bytes, Stack size 12 bytes, py32f0xx_hal_tim.o(i.TIM_OC4_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_OC4_SetConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+</UL>
+
+<P><STRONG><a name="[79]"></a>UART_AdvFeatureConfig</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, py32f0xx_hal_uart.o(i.UART_AdvFeatureConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_AdvFeatureConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[72]"></a>UART_EndRxTransfer</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.UART_EndRxTransfer))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[76]"></a>UART_EndTransmit_IT</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, py32f0xx_hal_uart.o(i.UART_EndTransmit_IT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_EndTransmit_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[71]"></a>UART_Receive_IT</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, py32f0xx_hal_uart.o(i.UART_Receive_IT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UART_Receive_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[78]"></a>UART_SetConfig</STRONG> (Thumb, 198 bytes, Stack size 16 bytes, py32f0xx_hal_uart.o(i.UART_SetConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = UART_SetConfig &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[75]"></a>UART_Transmit_IT</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, py32f0xx_hal_uart.o(i.UART_Transmit_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
+
+<P><STRONG><a name="[40]"></a>BlueLightModeDisplay</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, nixitetube.o(i.BlueLightModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = BlueLightModeDisplay &rArr; ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[42]"></a>CleanAllDisplay</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, nixitetube.o(i.CleanAllDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CleanAllDisplay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[43]"></a>ColorGradualModeDisplay</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, nixitetube.o(i.ColorGradualModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = ColorGradualModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[45]"></a>ColorJumpModeDisplay</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, nixitetube.o(i.ColorJumpModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ColorJumpModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[46]"></a>ColorPulseModeDisplay</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, nixitetube.o(i.ColorPulseModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ColorPulseModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[47]"></a>DMX512_4ChanModeDisplay</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, nixitetube.o(i.DMX512_4ChanModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DMX512_4ChanModeDisplay &rArr; ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[48]"></a>DMX512_8ChanModeDisplay</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, nixitetube.o(i.DMX512_8ChanModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DMX512_8ChanModeDisplay &rArr; ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[4b]"></a>GlitterModeDisplay</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, nixitetube.o(i.GlitterModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = GlitterModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[4c]"></a>GreenLightModeDisplay</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, nixitetube.o(i.GreenLightModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = GreenLightModeDisplay &rArr; ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[b3]"></a>OneColorModeDisplay</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, nixitetube.o(i.OneColorModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = OneColorModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[b2]"></a>RedLightModeDisplay</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, nixitetube.o(i.RedLightModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = RedLightModeDisplay &rArr; ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThreeNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[41]"></a>ThreeNumbersDisplay</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, nixitetube.o(i.ThreeNumbersDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = ThreeNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RedLightModeDisplay
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GreenLightModeDisplay
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMX512_8ChanModeDisplay
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMX512_4ChanModeDisplay
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BlueLightModeDisplay
+</UL>
+
+<P><STRONG><a name="[44]"></a>TwoNumbersDisplay</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, nixitetube.o(i.TwoNumbersDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VoiceControlModeDisplay
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OneColorModeDisplay
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GlitterModeDisplay
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorPulseModeDisplay
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorJumpModeDisplay
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ColorGradualModeDisplay
+</UL>
+
+<P><STRONG><a name="[b4]"></a>VoiceControlModeDisplay</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, nixitetube.o(i.VoiceControlModeDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = VoiceControlModeDisplay &rArr; TwoNumbersDisplay &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoNumbersDisplay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NixieTubeDisplay
+</UL>
+
+<P><STRONG><a name="[7a]"></a>KEY1_GPIO_StateGet</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, nixitetube_driver.o(i.KEY1_GPIO_StateGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = KEY1_GPIO_StateGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_IsInputPinSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[7c]"></a>KEY2_GPIO_StateGet</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, nixitetube_driver.o(i.KEY2_GPIO_StateGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = KEY2_GPIO_StateGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_IsInputPinSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[7d]"></a>KEY3_GPIO_StateGet</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, nixitetube_driver.o(i.KEY3_GPIO_StateGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = KEY3_GPIO_StateGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_IsInputPinSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[7e]"></a>KEY4_GPIO_StateGet</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, nixitetube_driver.o(i.KEY4_GPIO_StateGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = KEY4_GPIO_StateGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_IsInputPinSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[7f]"></a>KEY_GPIO_IntputPullUp</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, nixitetube_driver.o(i.KEY_GPIO_IntputPullUp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = KEY_GPIO_IntputPullUp &rArr; LL_GPIO_SetPinPull
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinPull
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[7b]"></a>LL_GPIO_IsInputPinSet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, nixitetube_driver.o(i.LL_GPIO_IsInputPinSet))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY4_GPIO_StateGet
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY3_GPIO_StateGet
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY2_GPIO_StateGet
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY1_GPIO_StateGet
+</UL>
+
+<P><STRONG><a name="[80]"></a>LL_GPIO_SetPinMode</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, nixitetube_driver.o(i.LL_GPIO_SetPinMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG_GPIO_CofigFloat
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG6_GPIO_CofigOutput
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG5_GPIO_CofigOutput
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG4_GPIO_CofigOutput
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG3_GPIO_CofigOutput
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG2_GPIO_CofigOutput
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG1_GPIO_CofigOutput
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_GPIO_IntputPullUp
+</UL>
+
+<P><STRONG><a name="[b5]"></a>LL_GPIO_SetPinOutputType</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nixitetube_driver.o(i.LL_GPIO_SetPinOutputType))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG6_GPIO_CofigOutput
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG5_GPIO_CofigOutput
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG4_GPIO_CofigOutput
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG3_GPIO_CofigOutput
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG2_GPIO_CofigOutput
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG1_GPIO_CofigOutput
+</UL>
+
+<P><STRONG><a name="[81]"></a>LL_GPIO_SetPinPull</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, nixitetube_driver.o(i.LL_GPIO_SetPinPull))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_GPIO_SetPinPull
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEG_GPIO_CofigFloat
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_GPIO_IntputPullUp
+</UL>
+
+<P><STRONG><a name="[a6]"></a>SEG1_GPIO_CofigOutput</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG1_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG1_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a1]"></a>SEG2_GPIO_CofigOutput</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG2_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG2_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a2]"></a>SEG3_GPIO_CofigOutput</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG3_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG3_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a3]"></a>SEG4_GPIO_CofigOutput</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG4_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG4_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a4]"></a>SEG5_GPIO_CofigOutput</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG5_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG5_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a5]"></a>SEG6_GPIO_CofigOutput</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG6_GPIO_CofigOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG6_GPIO_CofigOutput &rArr; LL_GPIO_SetPinMode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinOutputType
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[a0]"></a>SEG_GPIO_CofigFloat</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, nixitetube_driver.o(i.SEG_GPIO_CofigFloat))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SEG_GPIO_CofigFloat &rArr; LL_GPIO_SetPinPull
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinPull
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Scan
+</UL>
+
+<P><STRONG><a name="[23]"></a>APP_FlashErase</STRONG> (Thumb, 40 bytes, Stack size 32 bytes, eeprom.o(i.APP_FlashErase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = APP_FlashErase &rArr; HAL_FLASH_Erase &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Erase
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+</UL>
+
+<P><STRONG><a name="[26]"></a>APP_FlashProgram</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, eeprom.o(i.APP_FlashProgram))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = APP_FlashProgram &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEEPROM
+</UL>
+
+<P><STRONG><a name="[29]"></a>LL_GPIO_SetPinMode</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bspdriver_gpio.o(i.LL_GPIO_SetPinMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_GPIO_SetPinMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_GPIOConfig
+</UL>
+
+<P><STRONG><a name="[2a]"></a>LL_GPIO_SetPinOutputType</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, bspdriver_gpio.o(i.LL_GPIO_SetPinOutputType))
+<BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_GPIOConfig
+</UL>
+
+<P><STRONG><a name="[2c]"></a>LL_GPIO_SetPinPull</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bspdriver_gpio.o(i.LL_GPIO_SetPinPull))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_GPIO_SetPinPull
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_GPIOConfig
+</UL>
+
+<P><STRONG><a name="[2b]"></a>LL_GPIO_SetPinSpeed</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bspdriver_gpio.o(i.LL_GPIO_SetPinSpeed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_GPIO_SetPinSpeed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_GPIOConfig
+</UL>
+
+<P><STRONG><a name="[34]"></a>APP_TIM1_GPIO</STRONG> (Thumb, 102 bytes, Stack size 48 bytes, bspdriver_timer1.o(i.APP_TIM1_GPIO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = APP_TIM1_GPIO &rArr; HAL_GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM_Config
+</UL>
+
+<P><STRONG><a name="[36]"></a>APP_TIM1_INIT</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.APP_TIM1_INIT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = APP_TIM1_INIT &rArr; HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM_Config
+</UL>
+
+<P><STRONG><a name="[37]"></a>APP_TIM1_PWM</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, bspdriver_timer1.o(i.APP_TIM1_PWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = APP_TIM1_PWM &rArr; Tim1PwmDutySetChan3 &rArr; HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan3
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan2
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan1
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tim1PwmDutySetChan4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;APP_TIM1_PWM_Config
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[19]"></a>__arm_fini_</STRONG> (Unknown, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown_fini
+</UL>
+<HR></body></html>

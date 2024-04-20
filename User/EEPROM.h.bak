@@ -1,0 +1,12 @@
+#ifndef _EEPROM_H
+#define _EEPROM_H
+#include "py32f0xx_hal.h"
+
+void Error_Handler(void);
+extern void WriteUserSetDataIntoEEPROM(void);
+extern void ReadUserSetData(uint32_t* Databuf);
+
+
+#endif /*_EEPROM_H*/
+
+

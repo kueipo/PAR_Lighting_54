@@ -1,0 +1,16 @@
+---- VioceCtrlMode Matches (15 in 5 files) ----
+EEPROM.c (user):  LED.VioceCtrlMode     =  (uint8_t)EEPROM_UserSet_Data[9];
+EEPROM.c (user):  EEPROM_UserSet_Data[9] = (uint32_t)LED.VioceCtrlMode;
+KeyFunc.c (user):      if(LED.VioceCtrlMode < 9)
+KeyFunc.c (user):        LED.VioceCtrlMode++;
+KeyFunc.c (user):        LED.VioceCtrlMode = 1;
+KeyFunc.c (user):      if(LED.VioceCtrlMode > 1)
+KeyFunc.c (user):        LED.VioceCtrlMode--;
+KeyFunc.c (user):        LED.VioceCtrlMode = 9;
+LEDFunc.c (user):	LED.VioceCtrlMode = 1;
+LEDFunc.c (user):  if(LED.VioceCtrlMode == 9)
+LEDFunc.c (user):        LED.RGB_Buf[LED_R] = RGBColorData[LED.VioceCtrlMode-1][0];
+LEDFunc.c (user):        LED.RGB_Buf[LED_G] = RGBColorData[LED.VioceCtrlMode-1][1];
+LEDFunc.c (user):        LED.RGB_Buf[LED_B] = RGBColorData[LED.VioceCtrlMode-1][2];        
+LEDFunc.h (user):  uint8_t VioceCtrlMode;        //ÉùÒô¿ØÖÆÄ£Ê½
+NixiteTube.c (user):  TwoNumbersDisplay(LED.VioceCtrlMode);
